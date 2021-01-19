@@ -37,6 +37,11 @@ public class GatewayLoadBalancerClientAutoConfiguration {
 
 	// GlobalFilter beans
 
+	/**
+	 * 全局的 beans LoadBalancerClient
+	 * @param client
+	 * @return
+	 */
 	@Bean
 	@ConditionalOnBean(LoadBalancerClient.class)
 	public LoadBalancerClientFilter loadBalancerClientFilter(LoadBalancerClient client) {

@@ -24,6 +24,11 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.scripting.support.ResourceScriptSource;
 import org.springframework.web.reactive.DispatcherHandler;
 
+/**
+ *
+ *初始化redisRateLimiter
+ */
+
 @Configuration
 @AutoConfigureAfter(RedisReactiveAutoConfiguration.class)
 @AutoConfigureBefore(GatewayAutoConfiguration.class)
